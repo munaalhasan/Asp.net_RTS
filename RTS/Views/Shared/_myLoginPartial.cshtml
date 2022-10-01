@@ -1,0 +1,29 @@
+﻿@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+    <ul class="navbar-nav">
+        @if (SignInManager.IsSignedIn(User))
+        {
+            <li class="nav-item">
+                <form method="post" asp-controller="account" asp-action="logout">
+                    <button type="submit" style="width:auto"
+                            class="nav-link btn btn-link py-0">
+                        Logout @User.Identity.Name
+                    </button>
+                </form>
+            </li>
+
+            
+        }
+        else
+        {
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="account" asp-action="register">Register</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="account" asp-action="Login">Login</a>
+            </li>
+
+            
+        }
+    </ul>

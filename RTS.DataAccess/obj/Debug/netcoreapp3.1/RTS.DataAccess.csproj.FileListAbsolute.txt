@@ -1,0 +1,9 @@
+C:\Users\DELL\RTS\RTS.DataAccess\bin\Debug\netcoreapp3.1\RTS.DataAccess.deps.json
+C:\Users\DELL\RTS\RTS.DataAccess\bin\Debug\netcoreapp3.1\RTS.DataAccess.dll
+C:\Users\DELL\RTS\RTS.DataAccess\obj\Debug\netcoreapp3.1\RTS.DataAccess.AssemblyInfoInputs.cache
+C:\Users\DELL\RTS\RTS.DataAccess\obj\Debug\netcoreapp3.1\RTS.DataAccess.AssemblyInfo.cs
+C:\Users\DELL\RTS\RTS.DataAccess\bin\Debug\netcoreapp3.1\RTS.DataAccess.pdb
+C:\Users\DELL\RTS\RTS.DataAccess\obj\Debug\netcoreapp3.1\RTS.DataAccess.dll
+C:\Users\DELL\RTS\RTS.DataAccess\obj\Debug\netcoreapp3.1\RTS.DataAccess.pdb
+C:\Users\DELL\RTS\RTS.DataAccess\obj\Debug\netcoreapp3.1\RTS.DataAccess.csprojAssemblyReference.cache
+C:\Users\DELL\RTS\RTS.DataAccess\obj\Debug\netcoreapp3.1\RTS.DataAccess.csproj.CoreCompileInputs.cache

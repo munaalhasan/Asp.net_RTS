@@ -1,0 +1,120 @@
+﻿@model RTS.Models.TransactionModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Transactions</h1>
+
+@*<p>
+        <a asp-action="Create">Create New</a>
+    </p>*@
+<div class="form-row">
+    <div class="form-group col-md-7">
+        @using (Html.BeginForm("Index", "Transactions", FormMethod.Get))
+        {
+        <div class="form-row">
+            <div class="form-inline">
+                <label id="startDate"> Start Date </label>
+                <div class="mx-sm-2">
+                    <input type="date" name="startDate" />
+                    </div>
+                </div>
+            <div class="form-inline">
+                <label id="endDate" class="control-label"> End Date </label>
+                <div class="mx-sm-2">
+                    <input type="date" name="endDate" />
+                    </div>
+                    <div class="mx-sm-2">
+                        <input class="btn btn-primary" id="submit" type="submit" value="search" />
+                    </div>
+                </div>
+                @*<a asp-action="Index">Back</a>*@
+            </div>
+            }
+        </div>
+    <div class="form-group col-md-5">
+        @using (Html.BeginForm("Index", "Transactions", FormMethod.Get))
+        {
+        <div class="form-row">
+            <div class="col-8">
+                @Html.DropDownListFor(model => model.selectedItem, Model.ItemsList,
+                "Select Item", new { @class = "form-control" })
+            </div>
+            <div class ="col-2 mx-sm-2">
+                    <input class="btn btn-primary" id="submit" type="submit" value="search" />
+                </div>
+                <div class="form-inline col-1">
+                    <a asp-action="Index">Back</a>
+                    </div>
+                
+</div>
+         }      
+
+    </div>
+</div>
+
+    <br />
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @*@Html.DisplayNameFor(model => model.ItemRequest.Employee.EmployeeName)*@
+                    From Employee
+                </th>
+                <th>
+                    @*@Html.DisplayNameFor(model => model.Employee)*@
+                    To Employee
+                </th>
+                <th>
+                    Item
+                </th>
+                <th>
+                    Status
+                </th>
+                <th>
+                    Assigned To
+                </th>
+                <th>
+                    Tranaction Date
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.TransactionsList)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ItemRequest.Employee.EmployeeName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Employee.EmployeeName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ItemRequest.Item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Status.StatusType)
+
+                        @*@Html.DisplayFor(modelItem => item.changedStatus)*@
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Item.Employee.EmployeeName)
+
+                        @*@Html.DisplayFor(modelItem => item.changedAssigndToEmpID)*@
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TransactionDate)
+                        @*@Html.DisplayFor(modelItem => item.changedAssigndToEmpID)*@
+                    </td>
+                    @*<td>
+                            <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                            <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                            <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                        </td>*@
+                </tr>
+            }
+        </tbody>
+    </table>

@@ -1,0 +1,47 @@
+﻿@model IEnumerable<RTS.DataAccess.Models.ItemRequest>
+
+@{
+    ViewData["Title"] = "Received Requests";
+    Layout = "_LayoutWithLeftMenu";
+}
+ 
+<h1>ReceivedRequest</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Request From Employee
+            </th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.ItemRequest.Item.Name)*@
+                Item
+            </th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.ItemRequest.Status.StatusType)*@
+                Status 
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Employee.EmployeeName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status.StatusType)
+            </td>
+            <td>
+                <a asp-action="Approved" asp-route-id="@item.Id" class="btn btn-outline-info">Approved</a>
+                @*<a asp-action="Pending" asp-route-id="@item.Id" class="btn btn-outline-secondary">Pending</a>*@
+                <a asp-action="Rejected" asp-route-id="@item.Id" class="btn btn-outline-danger">Rejected</a>
+            </td>
+        </tr>       
+}
+    </tbody>
+</table>

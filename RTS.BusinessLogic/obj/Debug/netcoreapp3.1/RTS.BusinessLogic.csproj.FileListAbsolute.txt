@@ -1,0 +1,15 @@
+C:\Users\DELL\RTS\RTS.BusinessLogic\bin\Debug\netcoreapp3.1\RTS.BusinessLogic.deps.json
+C:\Users\DELL\RTS\RTS.BusinessLogic\bin\Debug\netcoreapp3.1\RTS.BusinessLogic.dll
+C:\Users\DELL\RTS\RTS.BusinessLogic\bin\Debug\netcoreapp3.1\RTS.DataAccess.dll
+C:\Users\DELL\RTS\RTS.BusinessLogic\bin\Debug\netcoreapp3.1\RTS.DataAccess.pdb
+C:\Users\DELL\RTS\RTS.BusinessLogic\obj\Debug\netcoreapp3.1\RTS.BusinessLogic.csprojAssemblyReference.cache
+C:\Users\DELL\RTS\RTS.BusinessLogic\obj\Debug\netcoreapp3.1\RTS.BusinessLogic.AssemblyInfoInputs.cache
+C:\Users\DELL\RTS\RTS.BusinessLogic\obj\Debug\netcoreapp3.1\RTS.BusinessLogic.AssemblyInfo.cs
+C:\Users\DELL\RTS\RTS.BusinessLogic\obj\Debug\netcoreapp3.1\RTS.BusinessLogic.csproj.CopyComplete
+C:\Users\DELL\RTS\RTS.BusinessLogic\bin\Debug\netcoreapp3.1\RTS.BusinessLogic.runtimeconfig.json
+C:\Users\DELL\RTS\RTS.BusinessLogic\bin\Debug\netcoreapp3.1\RTS.BusinessLogic.runtimeconfig.dev.json
+C:\Users\DELL\RTS\RTS.BusinessLogic\bin\Debug\netcoreapp3.1\RTS.BusinessLogic.pdb
+C:\Users\DELL\RTS\RTS.BusinessLogic\obj\Debug\netcoreapp3.1\RTS.BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\DELL\RTS\RTS.BusinessLogic\obj\Debug\netcoreapp3.1\RTS.BusinessLogic.dll
+C:\Users\DELL\RTS\RTS.BusinessLogic\obj\Debug\netcoreapp3.1\RTS.BusinessLogic.pdb
+C:\Users\DELL\RTS\RTS.BusinessLogic\obj\Debug\netcoreapp3.1\RTS.BusinessLogic.genruntimeconfig.cache
